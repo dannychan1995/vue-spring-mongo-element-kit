@@ -1,12 +1,17 @@
 package de.jonashackt.springbootvuejs.controller;
 
+import de.jonashackt.springbootvuejs.domain.Article;
 import de.jonashackt.springbootvuejs.domain.User;
 import de.jonashackt.springbootvuejs.repository.UserRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.mongodb.core.MongoTemplate;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
+
+import java.util.Arrays;
+import java.util.Date;
 
 @RestController()
 @RequestMapping("/api")
@@ -19,9 +24,23 @@ public class BackendController {
     @Autowired
     private UserRepository userRepository;
 
+    @Autowired
+    private MongoTemplate mongoTemplate;
+
+
     @RequestMapping(path = "/hello")
     public @ResponseBody String sayHello() {
         LOG.info("GET called on /hello resource");
+        for (int i = 0; i < 10; i++) {
+            Article article = new Article();
+            article.setTitle("MongoTemplate的基本使用");
+            article.setAuthor("yinjihuan");
+            article.setUrl("http://cxytiandi.com/blog/detail/" + i);
+            article.setTags(Arrays.asList("java", "mongodb", "spring"));
+            article.setVisitCount(0L);
+            article.setAddTime(new Date());
+            mongoTemplate.save(article);
+        }
         return HELLO_TEXT;
     }
 
