@@ -15,6 +15,7 @@
       <b-card>
         <p class="card-text">The Response hat this details</p>
         <b-btn v-b-toggle.collapse1_inner size="sm" variant="primary">HTTP Status</b-btn>
+        <el-button round>Round</el-button>
         <b-collapse id=collapse1_inner class="mt-2">
           <b-card>Status: {{ httpStatusCode }}</b-card>
           <b-card>Statustext: {{ httpStatusText }}</b-card>
