@@ -1,7 +1,7 @@
-package de.jonashackt.springbootvuejs.repository;
+package singtak.inventory.repository;
 
 
-import de.jonashackt.springbootvuejs.domain.User;
+import singtak.inventory.domain.User;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.data.repository.query.Param;
 

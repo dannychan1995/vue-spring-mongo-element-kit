@@ -1,4 +1,4 @@
-package de.jonashackt.springbootvuejs.domain;
+package singtak.inventory.domain;
 
 import javax.persistence.*;
 

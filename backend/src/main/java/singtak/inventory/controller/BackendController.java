@@ -1,8 +1,8 @@
-package de.jonashackt.springbootvuejs.controller;
+package singtak.inventory.controller;
 
-import de.jonashackt.springbootvuejs.domain.Article;
-import de.jonashackt.springbootvuejs.domain.User;
-import de.jonashackt.springbootvuejs.repository.UserRepository;
+import singtak.inventory.domain.Article;
+import singtak.inventory.domain.User;
+import singtak.inventory.repository.UserRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.Arrays;
 import java.util.Date;
+import java.util.List;
 
 @RestController()
 @RequestMapping("/api")
@@ -59,6 +60,12 @@ public class BackendController {
     public @ResponseBody User getUserById(@PathVariable("id") long id) {
         LOG.info("Reading user with id " + id + " from database.");
         return userRepository.findById(id).get();
+    }
+
+    @GetMapping(path="/users")
+    public @ResponseBody
+    List<Article> getUsers() {
+        return mongoTemplate.findAll(Article.class);
     }
 
 }

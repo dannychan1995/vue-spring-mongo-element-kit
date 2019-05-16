@@ -1,7 +1,7 @@
-package de.jonashackt.springbootvuejs.controller;
+package singtak.inventory.controller;
 
-import de.jonashackt.springbootvuejs.SpringBootVuejsApplication;
-import de.jonashackt.springbootvuejs.domain.User;
+import singtak.inventory.SpringBootVuejsApplication;
+import singtak.inventory.domain.User;
 import io.restassured.RestAssured;
 import org.apache.http.HttpStatus;
 import org.junit.Before;

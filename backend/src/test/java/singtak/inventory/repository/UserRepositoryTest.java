@@ -1,6 +1,6 @@
-package de.jonashackt.springbootvuejs.repository;
+package singtak.inventory.repository;
 
-import de.jonashackt.springbootvuejs.domain.User;
+import singtak.inventory.domain.User;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
