@@ -1,31 +1,3 @@
-# spring-boot-vuejs
-
-[![Build Status](https://travis-ci.org/jonashackt/spring-boot-vuejs.svg?branch=master)](https://travis-ci.org/jonashackt/spring-boot-vuejs)
-[![Coverage Status](https://coveralls.io/repos/github/jonashackt/spring-boot-vuejs/badge.svg?branch=master)](https://coveralls.io/github/jonashackt/spring-boot-vuejs?branch=master)
-[![License](http://img.shields.io/:license-mit-blue.svg)](https://github.com/jonashackt/spring-boot-vuejs/blob/master/LICENSE)
-[![versionspringboot](https://img.shields.io/badge/springboot-2.1.4_RELEASE-brightgreen.svg)](https://github.com/spring-projects/spring-boot)
-[![versionnodejs](https://img.shields.io/badge/nodejs-v11.14.0-brightgreen.svg)](https://nodejs.org/en/)
-[![versionvuejs](https://img.shields.io/badge/vue.js-2.6.10-brightgreen.svg)](https://vuejs.org/)
-[![versionvuecli](https://img.shields.io/badge/vue_CLI-3.7.0-brightgreen.svg)](https://cli.vuejs.org/)
-[![versionwebpack](https://img.shields.io/badge/webpack-4.28.4-brightgreen.svg)](https://webpack.js.org/)
-[![versionaxios](https://img.shields.io/badge/axios-0.18.0-brightgreen.svg)](https://github.com/axios/axios)
-[![versionjest](https://img.shields.io/badge/jest-23.6.0-brightgreen.svg)](https://jestjs.io/)
-[![versionnightwatch](https://img.shields.io/badge/nightwatch-0.9.21-brightgreen.svg)](http://nightwatchjs.org/)
-
-> **If you´re a JavaMagazin / blog.codecentric.de / Softwerker reader**, consider switching to [vue-cli-v2-webpack-v3](https://github.com/jonashackt/spring-boot-vuejs/tree/vue-cli-v2-webpack-v3)
-
-![localhost-first-run](screenshots/localhost-first-run.png)
-
-A live deployment is available on Heroku: https://spring-boot-vuejs.herokuapp.com
-
-This project is used as example in a variety of articles & as eBook:
-
-[![java-magazin-8.2018](screenshots/java-magazin-8.2018.png)](https://jaxenter.de/ausgaben/java-magazin-8-18)
-[![entwickler-press-092018](screenshots/entwickler-press-092018.jpg)](https://www.amazon.com/Vue-js-f%C3%BCr-alle-Wissenswertes-Einsteiger-ebook/dp/B07HQF9VX4/ref=sr_1_1?ie=UTF8&qid=1538484852&sr=8-1&keywords=Vue-js-f%C3%BCr-alle-Wissenswertes-Einsteiger-ebook)
-[![softwerker-vol12](screenshots/softwerker-vol12.png)](https://info.codecentric.de/softwerker-vol-12)
-
-[blog.codecentric.de/en/2018/04/spring-boot-vuejs](https://blog.codecentric.de/en/2018/04/spring-boot-vuejs) | [JavaMagazin 8.2018](https://jaxenter.de/ausgaben/java-magazin-8-18) | [entwickler.press shortcuts 229](https://www.amazon.com/Vue-js-f%C3%BCr-alle-Wissenswertes-Einsteiger-ebook/dp/B07HQF9VX4/ref=sr_1_1?ie=UTF8&qid=1538484852&sr=8-1&keywords=Vue-js-f%C3%BCr-alle-Wissenswertes-Einsteiger-ebook) | [softwerker Vol.12](https://info.codecentric.de/softwerker-vol-12)
-
 ## Table of Contents  
 * [In Search of a new Web Frontend-Framework after 2 Years of absence...](#in-search-of-a-new-web-frontend-framework-after-2-years-of-absence)
 * [Setup Vue.js & Spring Boot](#setup-vuejs--spring-boot)
